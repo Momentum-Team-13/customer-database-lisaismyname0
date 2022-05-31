@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    width: 350px;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    border: solid white 3px;
+}
+
+.square {
+    display: flex;
+    background-color: aqua;
+    border: solid 2px black;
+    width: 85px;
+    height: 80px;
+}
