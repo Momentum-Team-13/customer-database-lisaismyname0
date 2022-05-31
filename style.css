@@ -2,14 +2,23 @@
     box-sizing: border-box;
 }
 
-#container {
+#page {
+    background-color: pink
+}
+
+.card {
+    background-color: gray;
+    height: 50px;
+}
+
+.container {
     display: flex;
     background-color: blue;
     flex-direction: column;
     width: 350px;
 }
 
-#row {
+.row {
     display: flex;
     flex-direction: row;
     border: solid white 3px;
@@ -21,4 +30,32 @@
     border: solid 2px black;
     width: 85px;
     height: 80px;
+}
+
+.square1 {
+    background-color: gray;
+}
+
+.photos {
+    background-color: yellow;
+}
+
+.customer {
+    background-color: green;
+}
+
+.emails {
+    background-color: red;
+}
+
+.towns {
+    background-color: purple;
+}
+
+.dates {
+    background-color: orange;
+}
+
+.registration {
+    background-color: aqua
 }

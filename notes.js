@@ -5,3 +5,5 @@
 // priority is data, not style
 // have existing html, and will populate html with data from our javascript
 // this is our first database... a collection of structured data
+
+// questions: redeclare variables within customers.js or within main.js
