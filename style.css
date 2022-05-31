@@ -2,26 +2,14 @@
     box-sizing: border-box;
 }
 
-#page {
-    background-color: pink
-}
-
 .card {
     background-color: gray;
     height: 50px;
 }
 
 .container {
-    display: flex;
     background-color: blue;
-    flex-direction: column;
-    width: 350px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    border: solid white 3px;
+    height: 50px;
 }
 
 .square {
