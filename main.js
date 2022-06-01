@@ -1,4 +1,3 @@
-console.log(customers)
 
 const containerElement = document.querySelector("#container")
 
@@ -13,7 +12,7 @@ for (let customer of customers) {
 
     let imageElement = document.createElement("img")
     imageElement.src = customer.picture.large;
-    imageElement.alt = "placeholder image of kitten"
+    imageElement.alt = "images of customers in the database"
     imageElement.classList.add("photos")
     cardElement.appendChild(imageElement)
 
@@ -21,41 +20,45 @@ for (let customer of customers) {
     customerElement.classList.add("customer")
     customerElement.innerText = `Customer Name: ${customer.name.title} ${customer.name.first} ${customer.name.last}`
     cardElement.appendChild(customerElement)
-    console.log(`Customer Name:
-    ${customer.name.title} ${customer.name.first} ${customer.name.last}`)
 
     let emailElement = document.createElement("h3")
     emailElement.classList.add("emails")
     emailElement.innerText = `Email Address: ${customer.email}`
     cardElement.appendChild(emailElement)
-    console.log(`Email Address: ${customer.email}`)
 
     let addressElement = document.createElement("p")
     addressElement.classList.add("towns")
     const state = nameToAbbr(customer.location.state)
-    console.log(state)
     addressElement.innerText = `Location: ${customer.location.street.number} ${customer.location.street.name}, ${customer.location.city} ${state} ${customer.location.postcode}`
     cardElement.appendChild(addressElement)
-    console.log(`Address: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.country} ${customer.location.postcode}`)
 
     let dobElement = document.createElement("p")
     dobElement.classList.add("dates")
     let dobFormat = moment(customer.dob.date).format("MMM DD YYYY");
     dobElement.innerText = `DOB: ${dobFormat} Age: ${customer.dob.age}`
     cardElement.appendChild(dobElement)
-    console.log(`Customer's Birthday is: ${customer.dob.date} and they are ${customer.dob.age}`)
 
     let registeredElement = document.createElement("p")
     registeredElement.classList.add("registration")
     let registeredFormat = moment(customer.registered.date).format("MMM DD YYYY")
     registeredElement.innerText = `Date Registered: ${registeredFormat} Registered at age: ${customer.registered.age}`
-    console.log(`Customer Registered on: ${customer.registered.date} at ${customer.registered.age} years old`)
     cardElement.appendChild(registeredElement)
-    console.log(registeredElement)
 
     containerElement.appendChild(cardElement)
 
+    // console log checks
+    // console.log(customers)
+    // console.log(`Customer Name:
+    // ${customer.name.title} ${customer.name.first} ${customer.name.last}`);
+    // console.log(`Email Address: ${customer.email}`);
+    // console.log(`Customer's Birthday is: ${customer.dob.date} and they are ${customer.dob.age}`);
+    // console.log(`Address: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.postcode}`);
+    // console.log(`Customer Registered on: ${customer.registered.date} at ${customer.registered.age} years old`)
 }
+
+// TODO:
+// format customer names
+
 for (let customer of customers) {
     const first = customer.name.title.charAt(0)
     console.log(first)
@@ -70,6 +73,8 @@ for (let customer of customers) {
     // console.log(combined)
 
     // dobForrmat
+
+
 }
 
 
