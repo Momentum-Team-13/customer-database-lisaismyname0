@@ -1,4 +1,8 @@
-* {
+#customer-list {
+    background-color: gray
+}
+
+/* * {
     box-sizing: border-box;
 }
 
@@ -46,4 +50,4 @@
 
 .registration {
     background-color: aqua
-}
+} */
