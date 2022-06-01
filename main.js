@@ -12,7 +12,7 @@ for (let customer of customers) {
     contentElement.appendChild(cardElement)
 
     let imageElement = document.createElement("img")
-    // imageElement.src = "http://placekitten.com"
+    imageElement.src = customer.picture.large;
     imageElement.alt = "placeholder image of kitten"
     imageElement.classList.add("photos")
     cardElement.appendChild(imageElement)
@@ -50,5 +50,20 @@ for (let customer of customers) {
     console.log(registeredElement)
 
     containerElement.appendChild(cardElement)
+
+}
+for (let customer of customers) {
+    const first = customer.name.title.charAt(0)
+    console.log(first)
+
+    const upper = first.toUpperCase
+    console.log(upper)
+
+    // let remain = 
+
+    // const combined = upper + remain;
+
+    // console.log(combined)
+
 }
 

@@ -3,21 +3,28 @@
 }
 
 #container {
+    /* display: flex; */
+    display: inline-flex;
     border: 2px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    height: 300px;
-    width: 300px;
     border: 2px solid black;
+    box-sizing: content-box;
+    background-color: salmon;
+    justify-content: center;
 }
 
-.square {
+/* .square {
     display: flex;
     background-color: salmon;
-}
+    box-sizing: content-box;
+} */
+/* why does this box not respond to css rules? */
 
-.photos {
+/* .photos {
     background-color: yellow;
 }
 
@@ -39,4 +46,4 @@
 
 .registration {
     background-color: aqua
-}
+} */
