@@ -50,7 +50,7 @@ for (let customer of customers) {
     let registeredElement = document.createElement("span")
     registeredElement.classList.add("registration")
     let registeredFormat = moment(customer.registered.date).format("MMM DD YYYY")
-    registeredElement.innerText = `Date Registered: ${registeredFormat}`
+    registeredElement.innerText = `Customer since: ${registeredFormat}`
     cardElement.appendChild(registeredElement)
 
     containerElement.appendChild(cardElement)
