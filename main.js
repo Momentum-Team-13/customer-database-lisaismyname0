@@ -32,7 +32,9 @@ for (let customer of customers) {
 
     let addressElement = document.createElement("p")
     addressElement.classList.add("towns")
-    addressElement.innerText = `Location: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.country} ${customer.location.postcode}`
+    const state = nameToAbbr(customer.location.state)
+    console.log(state)
+    addressElement.innerText = `Location: ${customer.location.street.number} ${customer.location.street.name}, ${customer.location.city} ${state} ${customer.location.postcode}`
     cardElement.appendChild(addressElement)
     console.log(`Address: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.country} ${customer.location.postcode}`)
 
@@ -69,6 +71,9 @@ for (let customer of customers) {
 
     // dobForrmat
 }
+
+
+
 
 
 
