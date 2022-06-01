@@ -1,31 +1,20 @@
-#customer-list {
-    background-color: gray
-}
-
-/* * {
+* {
     box-sizing: border-box;
 }
 
-.card {
-    background-color: gray;
-    height: 50px;
+#container {
+    border: 2px solid black;
 }
 
-.container {
-    background-color: blue;
-    height: 50px;
+.card {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
 }
 
 .square {
     display: flex;
-    background-color: aqua;
-    border: solid 2px black;
-    width: 85px;
-    height: 80px;
-}
-
-.square1 {
-    background-color: gray;
+    background-color: salmon;
 }
 
 .photos {
@@ -33,7 +22,7 @@
 }
 
 .customer {
-    background-color: green;
+    background-color: salmon;
 }
 
 .emails {
@@ -50,4 +39,4 @@
 
 .registration {
     background-color: aqua
-} */
+}

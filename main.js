@@ -6,21 +6,20 @@ for (let customer of customers) {
 
     let cardElement = document.createElement("div")
     cardElement.classList.add("card")
-    // cardElement.appendChild(containerElement)
 
-    let contentElement = document.createElement("article")
-    contentElement.classList.add(".square")
-    cardElement.appendChild(contentElement)
+    let contentElement = document.createElement("div")
+    contentElement.classList.add("square")
+    contentElement.appendChild(cardElement)
 
-    let imageElement = document.createElement("picture")
+    let imageElement = document.createElement("img")
     // imageElement.src = "http://placekitten.com"
     imageElement.alt = "placeholder image of kitten"
     imageElement.classList.add("photos")
     cardElement.appendChild(imageElement)
 
-    let customerElement = document.createElement("h1")
+    let customerElement = document.createElement("h2")
     customerElement.classList.add("customer")
-    customerElement.innerText = `Customer Name: ${customer.name}`
+    customerElement.innerText = `Customer Name: ${customer.name.title} ${customer.name.first} ${customer.name.last}`
     cardElement.appendChild(customerElement)
     console.log(`Customer Name:
     ${customer.name.title} ${customer.name.first} ${customer.name.last}`)
@@ -33,21 +32,23 @@ for (let customer of customers) {
 
     let addressElement = document.createElement("p")
     addressElement.classList.add("towns")
-    addressElement.innerText = `Location: ${customer.location}`
+    addressElement.innerText = `Location: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.country} ${customer.location.postcode}`
     cardElement.appendChild(addressElement)
     console.log(`Address: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.country} ${customer.location.postcode}`)
 
     let dobElement = document.createElement("p")
     dobElement.classList.add("dates")
-    dobElement.innerText = `DOB: ${customer.dob}`
+    dobElement.innerText = `DOB: ${customer.dob.date} Age: ${customer.dob.age}`
     cardElement.appendChild(dobElement)
     console.log(`Customer's Birthday is: ${customer.dob.date} and they are ${customer.dob.age}`)
 
     let registeredElement = document.createElement("p")
     registeredElement.classList.add("registration")
-    registeredElement.innerText = `Date Registered: ${customer.registered}`
+    registeredElement.innerText = `Date Registered: ${customer.registered.date} Registered at Age: ${customer.registered.age}`
     console.log(`Customer Registered on: ${customer.registered.date} at ${customer.registered.age} years old`)
     cardElement.appendChild(registeredElement)
     console.log(registeredElement)
 
+    containerElement.appendChild(cardElement)
 }
+
