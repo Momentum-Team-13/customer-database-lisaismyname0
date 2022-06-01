@@ -38,13 +38,15 @@ for (let customer of customers) {
 
     let dobElement = document.createElement("p")
     dobElement.classList.add("dates")
-    dobElement.innerText = `DOB: ${customer.dob.date} Age: ${customer.dob.age}`
+    let dobFormat = moment(customer.dob.date).format("MMM DD YYYY");
+    dobElement.innerText = `DOB: ${dobFormat} Age: ${customer.dob.age}`
     cardElement.appendChild(dobElement)
     console.log(`Customer's Birthday is: ${customer.dob.date} and they are ${customer.dob.age}`)
 
     let registeredElement = document.createElement("p")
     registeredElement.classList.add("registration")
-    registeredElement.innerText = `Date Registered: ${customer.registered.date} Registered at Age: ${customer.registered.age}`
+    let registeredFormat = moment(customer.registered.date).format("MMM DD YYYY")
+    registeredElement.innerText = `Date Registered: ${registeredFormat} Registered at age: ${customer.registered.age}`
     console.log(`Customer Registered on: ${customer.registered.date} at ${customer.registered.age} years old`)
     cardElement.appendChild(registeredElement)
     console.log(registeredElement)
@@ -56,8 +58,8 @@ for (let customer of customers) {
     const first = customer.name.title.charAt(0)
     console.log(first)
 
-    const upper = first.toUpperCase
-    console.log(upper)
+    // const upper = first.toUpperCase
+    // console.log(upper)
 
     // let remain = 
 
@@ -65,5 +67,8 @@ for (let customer of customers) {
 
     // console.log(combined)
 
+    // dobForrmat
 }
+
+
 

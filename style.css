@@ -7,32 +7,40 @@
     display: inline-flex;
     border: 2px solid black;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
 .card {
     border: 2px solid black;
     box-sizing: content-box;
-    background-color: salmon;
-    justify-content: center;
+    align-items: center;
+    display: grid;
 }
 
 /* .square {
     display: flex;
     background-color: salmon;
     box-sizing: content-box;
+    justify-content: center;
 } */
+
 /* why does this box not respond to css rules? */
 
-/* .photos {
-    background-color: yellow;
+.photos {
+    border-radius: 50%;
+    align-items: center;
+    border: 3px solid black;
 }
 
-.customer {
+header {
+    font-size: 26px;
+}
+
+/* .customer {
     background-color: salmon;
-}
+} */
 
-.emails {
+/* .emails {
     background-color: red;
 }
 
@@ -40,10 +48,11 @@
     background-color: purple;
 }
 
-.dates {
+/* .dates {
     background-color: orange;
-}
+} */
 
-.registration {
-    background-color: aqua
+/* .registration {
+    background-color: aqua;
+    align-items: center;
 } */
