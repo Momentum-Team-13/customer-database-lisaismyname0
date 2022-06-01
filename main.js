@@ -25,20 +25,20 @@ for (let customer of customers) {
     imageElement.classList.add("photos")
     cardElement.appendChild(imageElement)
 
-    let customerElement = document.createElement("h1")
+    let customerElement = document.createElement("p")
     customerElement.classList.add("customer")
     customerElement.innerText = `${fullName}`
     cardElement.appendChild(customerElement)
 
     let emailElement = document.createElement("span")
     emailElement.classList.add("emails")
-    emailElement.innerText = `Email Address: ${customer.email}`
+    emailElement.innerText = `${customer.email}`
     cardElement.appendChild(emailElement)
 
     let addressElement = document.createElement("span")
     addressElement.classList.add("towns")
     const state = nameToAbbr(customer.location.state)
-    addressElement.innerText = `Location: ${customer.location.street.number} ${customer.location.street.name}, ${customer.location.city} ${state} ${customer.location.postcode} `
+    addressElement.innerText = `\n ${customer.location.street.number} ${customer.location.street.name} \n${customer.location.city} ${state} ${customer.location.postcode} `
     cardElement.appendChild(addressElement)
 
     let dobElement = document.createElement("span")
@@ -64,7 +64,3 @@ for (let customer of customers) {
     // console.log(`Address: ${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.postcode}`);
     // console.log(`Customer Registered on: ${customer.registered.date} at ${customer.registered.age} years old`)
 }
-
-
-
-

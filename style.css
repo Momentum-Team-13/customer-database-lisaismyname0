@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -7,18 +8,31 @@
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
+    box-sizing: content-box;
 }
 
 .card {
     display: grid;
-    box-sizing: content-box;
     margin: 3px;
     padding: 3px;
     align-content: center;
     justify-items: center;
+    border: solid;
+    width: 320px;
 }
 
 .photos {
     border-radius: 40% 60%;
     align-items: center;
+}
+
+.emails {
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.638);
+    /* background-color: bisque; */
+}
+
+.customer {
+    font-size: 25px;
+    font-weight: bolder;
 }
