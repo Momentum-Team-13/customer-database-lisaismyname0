@@ -3,11 +3,11 @@
 }
 
 #container {
-    /* display: flex; */
     display: inline-flex;
     border: 2px solid black;
     flex-wrap: wrap;
     align-items: center;
+    justify-items: center;
 }
 
 .card {
@@ -35,24 +35,3 @@
 header {
     font-size: 26px;
 }
-
-/* .customer {
-    background-color: salmon;
-} */
-
-/* .emails {
-    background-color: red;
-}
-
-.towns {
-    background-color: purple;
-}
-
-/* .dates {
-    background-color: orange;
-} */
-
-/* .registration {
-    background-color: aqua;
-    align-items: center;
-} */
